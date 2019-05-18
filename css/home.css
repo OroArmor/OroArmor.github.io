@@ -29,6 +29,9 @@
 	display: inline-flex;
 	flex-direction: column;
 }
+#notSide div{
+	flex-grow: 1;
+}
 
 #blogContent {
 	flex: 3;
@@ -36,6 +39,22 @@
 
 #blogContent h3 {
 	text-align: center;
+}
+
+#blogs{
+	display:flex;
+	flex-direction: column;
+}
+
+#blogID3{
+	order:1;
+}
+#blogID2{
+	order:3;
+}
+
+#blogID1{
+	order:-1;
 }
 
 

@@ -10,10 +10,10 @@ fetch("./blog/blogIndex.json")
 	blogObjs=[];
 	for(blog in blogs){
 		blogObjs.push(new Blog(blogs[blog]));
-	}  
-	
-	for(var i = 0; i < blogObjs.length; i++){
-		blogObjs[i].addBlogTo("#blogContent", {class:"blog"});
+	}
+
+	for(var i = blogObjs.length-3; i < blogObjs.length; i++){
+		blogObjs[i].addBlogTo("#blogs", {class:"blog", id:"blogID"+(blogObjs.length-i)});
 	}
   })
   .catch(
