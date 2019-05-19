@@ -23,5 +23,9 @@ fetch("./blog/blogIndex.json")
     console.log("Finished");
   })
   .catch(err => {
-    alert(err);
+// alert(err);
+	  alert(err);
+	 let pTag = $("<p></p>");
+	 pTag.text("Failed to get blogs.");
+     $("#blogs").appendChild(pTag);
   });
