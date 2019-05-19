@@ -30,5 +30,3 @@ class Blog {
     });
   }
 }
-
-export {Blog};
