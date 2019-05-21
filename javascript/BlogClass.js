@@ -27,6 +27,8 @@ class Blog {
       }
       tempDiv.append(pTag);
       return tempDiv;
+    }).catch(err=>{
+    	alert(err+". Blog name: "+this.title);
     });
   }
 

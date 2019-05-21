@@ -57,6 +57,13 @@
 	order:-1;
 }
 
+#latestVideo{
+	border:0;	
+}
+
+#musicExtras{
+	text-align:center !important;
+}
 
 @media only screen and (max-width: 600px) {
 	td {
