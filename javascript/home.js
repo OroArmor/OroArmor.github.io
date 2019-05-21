@@ -4,7 +4,7 @@ let blogObjs;
 fetch("./blog/blogIndex.json")
   .then(response => {
     return response.json();
-  })
+  });
   .then(data => {
     blogs = data.blogs;
   })
@@ -23,9 +23,19 @@ fetch("./blog/blogIndex.json")
     console.log("Finished");
   })
   .catch(err => {
-// alert(err);
-//	  alert(err);
-	 let pTag = $("<p></p>");
-	 pTag.text("Failed to get blogs.");
-     $("#blogs").append(pTag);
+	 let errorMessage = "Failed to get blogs. " + err;
+	 alert(errorMessage);
+	 $("#blogs").append("<p>"+errorMessage"</p>");
   });
+
+// $(document).ready(function(){
+// blogFetch.then(()=>alert("test"));
+// .catch(err => {
+// let errorMessage = "Failed to get blogs. " + err;
+// alert(errorMessage);
+// $(document).ready(function(){
+// $("#blogs").append("<p>"+errorMessage"</p>");
+// });
+// });
+// });
+

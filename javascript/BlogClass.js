@@ -20,9 +20,10 @@ class Blog {
       tempDiv.append($("<h4></h4>").text(this.title));
       let pTag = $("<p></p>").text(result);
       for(image in this.images){
-    	  let img = $("<img></img>");
-    	  img.src(image);
-    	  tempDiv.append(img);
+//    	  let img = $("<p></p>");
+    	  alert(image);
+//    	  img.text(image);
+//    	  tempDiv.append(img);
       }
       tempDiv.append(pTag);
       return tempDiv;

@@ -2,8 +2,6 @@ let hidden = false;
 
 $(document).ready(function() {
   $(".dropdownItem:not(#hideDrop)").click(function() {
-    let href = $(this).children("a").attr('href');
-
     location.replace($(this).children("a").attr('href'));
   });
 
