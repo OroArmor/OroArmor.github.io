@@ -65,7 +65,7 @@
 	text-align:center !important;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 	td {
 		display: inline-block;
 		width: 100% !important;
