@@ -14,7 +14,7 @@ whenLoaded = ()=>{
 	    for (blog in blogs) {
 	      blogObjs.push(new Blog(blogs[blog]));
 	    }
-	
+
 	    for (var i = blogObjs.length - 3; i < blogObjs.length; i++) {
 	      blogObjs[i].addBlogTo("#blogs", {
 	        class: "blog",
@@ -24,7 +24,6 @@ whenLoaded = ()=>{
 	    console.log("Finished");
 	  })
 	  .catch(err => {
-		 alert(err);
 		 let errorMessage = "Failed to get blogs. " + err;
 		 $("#blogs").append("<p>"+errorMessage+"</p>");
 	  });

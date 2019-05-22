@@ -19,16 +19,22 @@ class Blog {
       let tempDiv = $("<div></div>", divModifiers);
       tempDiv.append($("<h4></h4>").text(this.title));
       let pTag = $("<p></p>").text(result);
-      for(let image in this.images){
-    	  let img = $("<p></p>");
-//    	  alert(image);
-    	  img.text(image);
-    	  tempDiv.append(img);
-      }
       tempDiv.append(pTag);
+      let imageDiv = $("<div></div>", {
+        "id": "blogImageDiv"
+      })
+      for (let image in this.images) {
+        let img = $("<img></img>", {
+          "class": "blogImage"
+        });
+        img.attr("src", this.images[image]);
+        imageDiv.append(img);
+      }
+      if (this.images.length != 0)
+        tempDiv.append(imageDiv);
       return tempDiv;
-    }).catch(err=>{
-    	alert(err+". Blog name: "+this.title);
+    }).catch(err => {
+      alert(err + ". Blog name: " + this.title);
     });
   }
 

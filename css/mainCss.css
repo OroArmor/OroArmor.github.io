@@ -168,4 +168,14 @@ li .aNo:visited {
 }
 
 /* End of Body*/
+
+/*Footer*/
+#footer{
+  background-color: #555555;
+  padding:5px;
+  border-top: black 5px solid;
+}
+
+
+/*End Footer*/
 /* Media stuff */

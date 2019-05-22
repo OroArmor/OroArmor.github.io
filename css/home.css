@@ -1,91 +1,103 @@
+#main {
+  text-align: center;
+}
+
 #info {
-	display: flex;
-	align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
 #bioImg img {
-	max-height: 10em;
+  max-height: 10em;
 }
 
 #bioImg {
-	text-align: center;
-	flex-growth: 5;
+  flex-growth: 5;
 }
 
 #bioContent {
-	flex-growth: 7;
+  flex-growth: 7;
 }
 
 #belowBio {
-	display: inline-flex;
-	width: 100%;
-	align-items: stretch;
-	flex-direction: row;
-	flex-wrap: row wrap;
+  display: inline-flex;
+  width: 100%;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: row wrap;
 }
 
 #notSide {
-	flex: 7;
-	display: inline-flex;
-	flex-direction: column;
+  flex: 7;
+  display: inline-flex;
+  flex-direction: column;
 }
-#notSide div{
-	flex-grow: 1;
+
+#notSide div {
+  flex-grow: 1;
 }
 
 #blogContent {
-	flex: 3;
+  flex: 3;
 }
 
-#blogContent h3 {
-	text-align: center;
+#blogs {
+  display: flex;
+  flex-direction: column;
 }
 
-#blogs{
-	display:flex;
-	flex-direction: column;
+#blogID3 {
+  order: 1;
 }
 
-#blogID3{
-	order:1;
-}
-#blogID2{
-	order:3;
+#blogID2 {
+  order: 0;
 }
 
-#blogID1{
-	order:-1;
+#blogID1 {
+  order: -1;
 }
 
-#latestVideo{
-	border:0;	
+#latestVideo {
+  border: 0;
 }
 
-#musicExtras{
-	text-align:center !important;
+#blogImageDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 10px;
+}
+
+.blogImage {
+  width: 30%;
+  height: 30%;
+  margin: auto;
+}
+
+#code iframe{
+	width:820px !important;
 }
 
 @media only screen and (max-width: 1200px) {
-	td {
-		display: inline-block;
-		width: 100% !important;
-	}
-	#bioImg img {
-		max-height: 15em !important;
-	}
-	#bioContent {
-		text-align: center;
-	}
-	#belowBio {
-		flex-direction: column;
-	}
-	#info {
-		flex-direction: column;
-	}
-	#notSide{
-		text-align:center;
-	}
-	.indent{
-		text-indent:0em !important;
-	}
+  td {
+    display: inline-block;
+    width: 100% !important;
+  }
+
+  #bioImg img {
+    max-height: 15em !important;
+  }
+
+  #belowBio {
+    flex-direction: column;
+  }
+
+  #info {
+    flex-direction: column;
+  }
+
+  .indent {
+    text-indent: 0em !important;
+  }
 }

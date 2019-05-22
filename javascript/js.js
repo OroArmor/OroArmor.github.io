@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   $('#hideDrop').click(function() {
     $('.dropdownItem:not(#hideDrop)').css("display", (hidden) ? "initial" : "none");
-    $("#downImg").attr("src", "./images/arrow" + ((hidden) ? "" : "Down") + ".png");
+    $("#downImg").attr("src", "https://oroarmor.github.io/images/arrow" + ((hidden) ? "" : "Down") + ".png");
     $("#dropdown").toggleClass("dropdownUp");
     hidden = !hidden;
   });
