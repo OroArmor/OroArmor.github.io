@@ -10,3 +10,8 @@
   height: 30%;
   margin: auto;
 }
+
+#blog{
+	display:flex;
+	align-items:stretch;
+}
