@@ -17,7 +17,9 @@ class Blog {
   async createHTMLBlog(divModifiers) {
     return this.getText(this.txtFilePath).then(result => {
       let tempDiv = $("<div></div>", divModifiers);
-      tempDiv.append($("<h4></h4>").text(this.title));
+      tempDiv.append($("<h4></h4>").append($("<a></a>", {
+        class: "aNo"
+      }).text(this.title).attr("href", "https://oroarmor.github.io/blog/blog.html?blog=" + this.id)));
       let pTag = $("<p></p>").text(result);
       tempDiv.append(pTag);
       let imageDiv = $("<div></div>", {
