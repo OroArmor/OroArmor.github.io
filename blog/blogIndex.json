@@ -4,24 +4,24 @@
     "images": [],
     "text": "https://oroarmor.github.io/blog/blogTexts/blog4.24.19.txt",
     "date": "April 24, 2019 00:00:00",
-    "id":0
-  },{
+    "id": 0
+  }, {
     "title": "My Second Blog, 4/27/19",
     "images": [],
     "text": "https://oroarmor.github.io/blog/blogTexts/blog4.27.19.txt",
     "date": "April 27, 2019 00:00:00",
-    "id":1
-  },{
+    "id": 1
+  }, {
     "title": "My First Real Blog, 5/18/19",
     "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Advanced_Placement_logo_-_College_Board.svg/1200px-Advanced_Placement_logo_-_College_Board.svg.png", "https://upload.wikimedia.org/wikipedia/en/2/2c/FL_Studio_Mobile_icon.png"],
     "text": "https://oroarmor.github.io/blog/blogTexts/blog5.18.19.txt",
     "date": "May 18, 2019 00:00:00",
-    "id":2
-  },{
+    "id": 2
+  }, {
     "title": "My Second Blog, 6/1/19",
     "images": [],
     "text": "https://oroarmor.github.io/blog/blogTexts/blog6.1.19.txt",
     "date": "June 1, 2019 00:00:00",
-    "id":3
+    "id": 3
   }]
 }

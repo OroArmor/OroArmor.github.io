@@ -17,7 +17,7 @@ whenLoaded = () => {
 
       let splitURL = location.href.split("?");
       console.log(splitURL);
-      
+
       if (splitURL[1].substring(0, 5) == "blog=") {
         let found = false;
         for (let i = 0; i < blogObjs.length; i++) {
@@ -34,26 +34,26 @@ whenLoaded = () => {
           $("#blogs").append("<p>The requested blog was not found</p>");
           $("#prev").css("display", "none");
           $("#next").css("display", "none");
-        }else{
-	        $("#prev").attr("href", "?blog=" + ((splitURL[1].substring(5) > 0 && found) ? (splitURL[1].substring(5) - 1) : splitURL[1].substring(5)));
-	        $("#next").attr("href", "?blog=" + ((splitURL[1].substring(5) < blogObjs.length - 1 && found) ? (parseInt(splitURL[1].substring(5)) + 1) : splitURL[1].substring(5)));
+        } else {
+          $("#prev").attr("href", "?blog=" + ((splitURL[1].substring(5) > 0 && found) ? (splitURL[1].substring(5) - 1) : splitURL[1].substring(5)));
+          $("#next").attr("href", "?blog=" + ((splitURL[1].substring(5) < blogObjs.length - 1 && found) ? (parseInt(splitURL[1].substring(5)) + 1) : splitURL[1].substring(5)));
         }
-      }else if(splitURL[1].substring(0,10)=="blogStart="){
-    	  if(splitURL[2].substring(0,8) == "blogEnd="){
-	    	  let start = parseInt(splitURL[1].substring(10));
-	    	  let end = parseInt(splitURL[2].substring(8));
-	    	  
-	    	  for (let i = 0; i < blogObjs.length; i++) {
-	              if (blogObjs[i].id <= end && blogObjs[i].id >= start) {
-	                blogObjs[i].addBlogTo("#blogs", {
-	                  class: "blog",
-	                  style: "order:"+(i*1)
-	                });
-	              }
-	            }
-	    	  
-//	    	  alert(start+" "+end);
-	      }
+      } else if (splitURL[1].substring(0, 10) == "blogStart=") {
+        if (splitURL[2].substring(0, 8) == "blogEnd=") {
+          let start = parseInt(splitURL[1].substring(10));
+          let end = parseInt(splitURL[2].substring(8));
+
+          for (let i = 0; i < blogObjs.length; i++) {
+            if (blogObjs[i].id <= end && blogObjs[i].id >= start) {
+              blogObjs[i].addBlogTo("#blogs", {
+                class: "blog",
+                style: "order:" + (i * 1)
+              });
+            }
+          }
+
+          //	    	  alert(start+" "+end);
+        }
       }
       console.log("Finished");
     })

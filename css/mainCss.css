@@ -7,8 +7,8 @@ body {
   font-size: 1em;
 }
 
-.indent{
-	text-indent:2em;
+.indent {
+  text-indent: 2em;
 }
 
 /* Start of Header*/
@@ -79,8 +79,8 @@ li .aNo:visited {
     flex-direction: column;
     height: 11.1em;
     justify-content: flex-start;
-    padding:0px;
-    align-content:stretch;
+    padding: 0px;
+    align-content: stretch;
   }
 
   .dropdownUp {
@@ -113,11 +113,11 @@ li .aNo:visited {
 }
 
 @media screen and (max-width:1200px) {
-  .dropdownItem{
+  .dropdownItem {
     position: relative;
     right: 1em;
     text-align: center;
-    width:99.5%;
+    width: 99.5%;
   }
 
   #hideDrop {
@@ -152,7 +152,7 @@ li .aNo:visited {
 .content {
   background-color: #777777;
   padding: 5px;
-  margin:5px;
+  margin: 5px;
 }
 
 .contentHeader {
@@ -161,21 +161,18 @@ li .aNo:visited {
   line-spacing: 0;
   margin: 0;
   line-spacing: 0;
-  text-align:center;
+  text-align: center;
 }
 
-.content p {
-}
+.content p {}
 
 /* End of Body*/
-
 /*Footer*/
-#footer{
+#footer {
   background-color: #555555;
-  padding:5px;
+  padding: 5px;
   border-top: black 5px solid;
 }
-
 
 /*End Footer*/
 /* Media stuff */
