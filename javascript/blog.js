@@ -17,7 +17,7 @@ whenLoaded = () => {
 
       let splitURL = location.href.split("?");
       console.log(splitURL);
-
+      if(splitURL.length > 1){
       if (splitURL[1].substring(0, 5) == "blog=") {
         let found = false;
         for (let i = 0; i < blogObjs.length; i++) {
@@ -55,6 +55,7 @@ whenLoaded = () => {
 
           //	    	  alert(start+" "+end);
         }
+      }
       }else{ // default
         let start = blogObjs.length-1;
           let end = blogObjs.length-26;
