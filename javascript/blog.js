@@ -42,7 +42,8 @@ whenLoaded = () => {
         if (splitURL[2].substring(0, 8) == "blogEnd=") {
           let start = parseInt(splitURL[1].substring(10));
           let end = parseInt(splitURL[2].substring(8));
-
+          $("#prev").css("display", "none");
+          $("#next").css("display", "none");
           for (let i = 0; i < blogObjs.length; i++) {
             if (blogObjs[i].id <= end && blogObjs[i].id >= start) {
               blogObjs[i].addBlogTo("#blogs", {
@@ -54,6 +55,21 @@ whenLoaded = () => {
 
           //	    	  alert(start+" "+end);
         }
+      }else{ // default
+        let start = blogObjs.length-1;
+          let end = blogObjs.length-26;
+          for (let i = 0; i < blogObjs.length; i++) {
+            if (blogObjs[i].id <= end && blogObjs[i].id >= start) {
+              blogObjs[i].addBlogTo("#blogs", {
+                class: "blog",
+                style: "order:" + (i * 1)
+              });
+            }
+          }
+        
+         $("#prev").attr("href", "?blog=" + ((end > 0) ? Math.max((end - 25),0) : end);
+          $("#next").attr("href", "?blog=" + ((start < blogObjs.length - 1) ? Math.min((start+25),blogObjs.length-1) : start));
+        
       }
       console.log("Finished");
     })
