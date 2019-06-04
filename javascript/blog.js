@@ -60,7 +60,7 @@ whenLoaded = () => {
         let start = blogObjs.length-1;
           let end = blogObjs.length-26;
           for (let i = 0; i < blogObjs.length; i++) {
-            if (blogObjs[i].id <= end && blogObjs[i].id >= start) {
+            if (blogObjs[i].id >= end && blogObjs[i].id <= start) {
               blogObjs[i].addBlogTo("#blogs", {
                 class: "blog",
                 style: "order:" + (i * 1)
